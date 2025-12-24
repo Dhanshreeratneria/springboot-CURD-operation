@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<h1>Welcome to Home Page</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Product Name</th>
+            <th>Cost</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr th:each="item : ${obj}">
+            <td th:text="${item.customerid}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.proname}"></td>
+            <td th:text="${item.cost}"></td>
+            <td>
+                <a th:href="@{/showFormForUpdate/{id}(id=${item.customerid})}"
+                   class="btn btn-primary">Update</a>
+
+                <a th:href="@{/deleteEmployee/{id}(id=${item.customerid})}"
+                   class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/reg}" class="register-link">➕ Registration</a>
+
+</body>
+</html>
