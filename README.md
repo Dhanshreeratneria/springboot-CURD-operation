@@ -1,6 +1,13 @@
-"# spring-boot-curd-operation" 
-"# spring-boot-curd-operation" 
-"# spring-boot-curd-operation" 
-"# springboot-CURD-Opration-" 
-"# springboot-CURD-operation" 
-"# springboot-CURD-operation" 
+# Spring Boot CRUD Operation
+
+A web-based CRUD application built using Spring Boot.
+
+## Features
+- Create, Read, Update, Delete operations
+- Spring Boot & Spring Data JPA
+- MVC architecture
+- Thymeleaf, HTML, CSS, Bootstrap
+
+## Author
+Dhanshreeratneria
+
